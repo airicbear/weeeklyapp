@@ -34,7 +34,9 @@ class Members extends StatelessWidget {
                         Theme.of(context)
                             .scaffoldBackgroundColor
                             .withOpacity(0.5),
-                        Colors.transparent,
+                        Theme.of(context)
+                            .scaffoldBackgroundColor
+                            .withOpacity(0.0),
                       ],
                     ),
                   ),
@@ -214,8 +216,8 @@ class _FadeInGradientState extends State<_FadeInGradient> {
             stops: [0.0, 0.195, 0.5, 1.0],
             colors: [
               Theme.of(context).scaffoldBackgroundColor,
-              Colors.transparent,
-              Colors.transparent,
+              Theme.of(context).scaffoldBackgroundColor.withOpacity(0.0),
+              Theme.of(context).scaffoldBackgroundColor.withOpacity(0.0),
               Theme.of(context).scaffoldBackgroundColor
             ],
           ),
