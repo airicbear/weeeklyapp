@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 class Member {
   final String stageName;
   final String firstName;
@@ -8,11 +6,11 @@ class Member {
   final String imagePath;
 
   Member({
-    @required this.stageName,
-    @required this.firstName,
-    @required this.lastName,
-    @required this.birthday,
-    @required this.imagePath,
+    this.stageName,
+    this.firstName,
+    this.lastName,
+    this.birthday,
+    this.imagePath,
   });
 
   String get fullName => '${this.firstName} ${this.lastName}';

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:weeeklyapp/widgets/members.dart';
+import 'package:weeeklyapp/widgets/home.dart';
 
 void main() {
   runApp(MyApp());
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       home: Scaffold(
-        body: Members(),
+        body: Home(),
       ),
     );
   }

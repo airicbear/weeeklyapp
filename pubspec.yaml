@@ -53,6 +53,7 @@ flutter:
   assets:
     - assets/images/members/we-can/
     - assets/images/logo/
+    - assets/images/home_buttons/
 
   fonts:
     - family: Jua
