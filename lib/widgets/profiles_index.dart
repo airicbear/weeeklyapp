@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:weeeklyapp/data/member.dart';
-import 'package:weeeklyapp/widgets/mainappbar.dart';
+import 'package:weeeklyapp/data/data.dart';
+import 'package:weeeklyapp/model/member.dart';
+import 'package:weeeklyapp/widgets/main_appbar.dart';
 
 class Profiles extends StatelessWidget {
   @override
@@ -19,7 +20,7 @@ class Profiles extends StatelessWidget {
             ),
             delegate: SliverChildBuilderDelegate(
               (BuildContext context, int index) {
-                final member = Member.members.elementAt(index);
+                final member = Data.members.elementAt(index);
                 return InkResponse(
                   radius: 72,
                   onTap: () => Navigator.of(context).push(
@@ -62,7 +63,6 @@ class Profiles extends StatelessWidget {
                       Text(
                         member.stageName,
                         style: TextStyle(
-                          fontFamily: 'Jua',
                           fontSize: 20,
                         ),
                       ),
@@ -70,7 +70,7 @@ class Profiles extends StatelessWidget {
                   ),
                 );
               },
-              childCount: Member.members.length,
+              childCount: Data.members.length,
             ),
           ),
         ],
@@ -90,16 +90,15 @@ class _Profile extends StatelessWidget {
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
-            pinned: true,
-            elevation: 0,
             expandedHeight: 560,
             flexibleSpace: FlexibleSpaceBar(
               titlePadding: const EdgeInsets.only(top: 236),
               title: Text(
                 member.stageName,
                 style: TextStyle(
-                  fontFamily: 'Jua',
+                  fontFamily: 'Vollkorn',
                   fontSize: 32,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
               centerTitle: true,
@@ -111,6 +110,7 @@ class _Profile extends StatelessWidget {
                     child: Image.asset(
                       member.imagePath,
                       fit: BoxFit.cover,
+                      gaplessPlayback: true,
                     ),
                   ),
                   _FadeInGradient(),

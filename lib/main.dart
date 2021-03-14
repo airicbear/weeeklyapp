@@ -23,7 +23,6 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.orange,
         accentColor: Colors.deepOrange,
         brightness: Brightness.dark,
-        scaffoldBackgroundColor: Color(0xff262626),
         appBarTheme: AppBarTheme(
           color: Colors.transparent,
           elevation: 0,

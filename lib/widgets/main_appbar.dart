@@ -13,8 +13,6 @@ class MainAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
-      pinned: true,
-      elevation: 0,
       expandedHeight: 256,
       flexibleSpace: FlexibleSpaceBar(
         titlePadding: const EdgeInsets.only(top: 236),
@@ -25,12 +23,14 @@ class MainAppBar extends StatelessWidget {
               )
             : Center(
                 child: ListTile(
-                  title: Text(
-                    this.title,
-                    style: TextStyle(
-                      fontFamily: 'Jua',
-                      fontSize: 24.0,
-                      fontWeight: FontWeight.normal,
+                  title: FittedBox(
+                    child: Text(
+                      this.title,
+                      style: TextStyle(
+                        fontFamily: 'Vollkorn',
+                        fontSize: 24.0,
+                        fontWeight: FontWeight.w900,
+                      ),
                     ),
                   ),
                 ),
@@ -42,6 +42,7 @@ class MainAppBar extends StatelessWidget {
             Image.asset(
               this.imagePath,
               fit: BoxFit.cover,
+              gaplessPlayback: true,
             ),
             DecoratedBox(
               decoration: BoxDecoration(
