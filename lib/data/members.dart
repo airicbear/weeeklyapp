@@ -45,7 +45,7 @@ final List<Member> membersData = [
   ),
   Member(
     stageName: 'Zoa',
-    firstName: 'Cho',
+    firstName: 'Jo',
     lastName: 'Hyewon',
     birthday: DateTime.utc(2005, 05, 31),
     imagePath: 'assets/images/members/we-can/zoa.jpg',
