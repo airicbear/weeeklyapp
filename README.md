@@ -1,20 +1,12 @@
-# weeeklyapp
+# Weeekly Lyrics
 
-App made for Weeekly.
+Fan-made lyrics app for [Weeekly](https://en.wikipedia.org/wiki/Weeekly).
 
-## Objective
+## Screenshots
 
-Learn about Weeekly.
-
-## Motivation
-
-First, I watched the Tag Me MV and was amazed by it.
-Then I listened to their "We Are" album.
-Their latest album "We Can" proves they are good.
+[<img src="./assets/screenshots/lyrics.png" alt="Lyrics page screenshot" width="270">](./assets/screenshots/lyrics.png)
+[<img src="./assets/screenshots/profile.png" alt="Profile page screenshot" width="270">](./assets/screenshots/profile.png)
 
 ## Credits
 
-Thanks to the following websites
-
-- https://api.flutter.dev/
-- https://stackoverflow.com/
+- Lyrics from [Genius.com](https://genius.com/)
