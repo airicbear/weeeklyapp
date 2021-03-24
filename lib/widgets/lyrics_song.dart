@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
 import 'package:weeeklyapp/model/song.dart';
 import 'package:weeeklyapp/widgets/main_appbar.dart';
-import 'package:weeeklyapp/widgets/missing_lyrics.dart';
 
 class LyricsPage extends StatefulWidget {
   final String imagePath;
