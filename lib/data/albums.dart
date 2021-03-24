@@ -14,6 +14,14 @@ List<Album> albumsData = [
     ],
   ),
   Album(
+    title: 'Wanna Be RYAN OST',
+    releaseDate: DateTime.utc(2020, 09, 25),
+    imagePath: 'assets/images/cover_art/boom_chi_ki.jpeg',
+    lyricsPaths: [
+      'assets/lyrics/boom_chi_ki/boom_chi_ki.json',
+    ],
+  ),
+  Album(
     title: 'We can',
     releaseDate: DateTime.utc(2020, 10, 13),
     imagePath: 'assets/images/cover_art/we_can.png',
