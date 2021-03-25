@@ -12,14 +12,14 @@ final List<Member> membersData = [
     stageName: 'Jiyoon',
     firstName: 'Shin',
     lastName: 'Jiyoon',
-    birthday: DateTime.utc(2002, 05, 10),
+    birthday: DateTime.utc(2002, 03, 02),
     imagePath: 'assets/images/members/we-can/shin-jiyoon.jpg',
   ),
   Member(
     stageName: 'Monday',
     firstName: 'Kim',
     lastName: 'Jimin',
-    birthday: DateTime.utc(2002, 03, 02),
+    birthday: DateTime.utc(2002, 05, 10),
     imagePath: 'assets/images/members/we-can/monday.jpg',
   ),
   Member(
