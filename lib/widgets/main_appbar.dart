@@ -19,7 +19,7 @@ class MainAppBar extends StatelessWidget {
         title: this.title == 'weeekly'
             ? ImageIcon(
                 AssetImage('assets/images/logo/weeekly.png'),
-                size: 128,
+                size: 192,
               )
             : Center(
                 child: ListTile(

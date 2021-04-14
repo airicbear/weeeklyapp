@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:weeeklyapp/data/data.dart';
-import 'package:weeeklyapp/widgets/grid_card.dart';
 import 'package:weeeklyapp/widgets/lyrics_index.dart';
 import 'package:weeeklyapp/widgets/main_appbar.dart';
 import 'package:weeeklyapp/widgets/profiles_index.dart';
@@ -12,12 +11,14 @@ class Home extends StatefulWidget {
       page: Lyrics(
         albums: Data.albums,
       ),
-      picture: Image.asset('assets/images/home_buttons/lyrics.jpg'),
+      icon: Icon(Icons.menu_book),
     ),
     _Page(
       title: 'Profiles',
       page: Profiles(),
-      picture: Image.asset('assets/images/home_buttons/profiles.png'),
+      icon: Icon(
+        Icons.person,
+      ),
     ),
   ];
 
@@ -25,32 +26,52 @@ class Home extends StatefulWidget {
   State<StatefulWidget> createState() => HomeState();
 }
 
-class HomeState extends State<Home> {
+class HomeState extends State<Home> with TickerProviderStateMixin {
+  TabController _tabController;
+  Widget _currentPage;
+
+  @override
+  void initState() {
+    super.initState();
+    _currentPage = Home.pages.first.page;
+    _tabController = TabController(
+      length: Home.pages.length,
+      vsync: this,
+    );
+    _tabController.addListener(() {
+      setState(() {
+        _currentPage = Home.pages.elementAt(_tabController.index).page;
+      });
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
-    return CustomScrollView(
-      slivers: [
-        MainAppBar(
-          imagePath: 'assets/images/members/we-can/weeekly-we-can.jpg',
-          title: 'weeekly',
+    return Scaffold(
+      bottomNavigationBar: TabBar(
+        controller: _tabController,
+        tabs: List<Tab>.generate(
+          Home.pages.length,
+          (index) => Tab(
+            text: Home.pages.elementAt(index).title,
+            icon: Home.pages.elementAt(index).icon,
+          ),
         ),
-        SliverGrid(
-          gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-            maxCrossAxisExtent: 256.0,
+        labelStyle: TextStyle(
+          fontFamily: 'Vollkorn',
+          fontSize: 24.0,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+      body: CustomScrollView(
+        slivers: [
+          MainAppBar(
+            imagePath: 'assets/images/members/we-can/weeekly-we-can.jpg',
+            title: 'weeekly',
           ),
-          delegate: SliverChildBuilderDelegate(
-            (BuildContext context, int index) {
-              _Page button = Home.pages.elementAt(index);
-              return GridCard(
-                title: button.title,
-                nextPage: button.page,
-                image: button.picture,
-              );
-            },
-            childCount: Home.pages.length,
-          ),
-        )
-      ],
+          _currentPage,
+        ],
+      ),
     );
   }
 }
@@ -58,10 +79,10 @@ class HomeState extends State<Home> {
 class _Page {
   final String title;
   final Widget page;
-  final Image picture;
+  final Icon icon;
   _Page({
     @required this.title,
     @required this.page,
-    @required this.picture,
+    @required this.icon,
   });
 }
