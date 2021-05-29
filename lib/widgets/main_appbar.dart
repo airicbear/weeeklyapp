@@ -5,9 +5,9 @@ class MainAppBar extends StatelessWidget {
   final String title;
 
   const MainAppBar({
-    Key key,
-    @required this.imagePath,
-    @required this.title,
+    Key? key,
+    required this.imagePath,
+    required this.title,
   }) : super(key: key);
 
   @override

@@ -9,7 +9,7 @@ class PageTransition {
     ) {
       return AnimatedBuilder(
           animation: animation,
-          builder: (BuildContext context, Widget child) {
+          builder: (BuildContext context, Widget? child) {
             return Opacity(
               opacity: Interval(
                 0.0,

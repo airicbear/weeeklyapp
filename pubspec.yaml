@@ -3,23 +3,23 @@ description: App for Weeekly
 
 publish_to: 'none'
 
-version: 1.0.0+7
+version: 1.0.0+8
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  flutter_widget_from_html: ^0.6.0
+  flutter_widget_from_html_core: ^0.6.1+1
 
-  cupertino_icons: ^1.0.2
+  cupertino_icons: ^1.0.3
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_launcher_icons: ^0.9.0
-  flutter_native_splash: ^1.1.7+1
+  flutter_native_splash: ^1.1.8+4
 
 flutter_icons:
   android: "launcher_icon"

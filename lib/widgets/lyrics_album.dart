@@ -11,7 +11,7 @@ import 'package:weeeklyapp/widgets/page_transition.dart';
 class AlbumPage extends StatelessWidget {
   final Album album;
 
-  const AlbumPage({Key key, this.album}) : super(key: key);
+  const AlbumPage({Key? key, required this.album}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

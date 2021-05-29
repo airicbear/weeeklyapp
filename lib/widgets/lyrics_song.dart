@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
+import 'package:flutter_widget_from_html_core/flutter_widget_from_html_core.dart';
 import 'package:weeeklyapp/model/song.dart';
 import 'package:weeeklyapp/widgets/main_appbar.dart';
 
@@ -7,7 +7,11 @@ class LyricsPage extends StatefulWidget {
   final String imagePath;
   final Song song;
 
-  const LyricsPage({Key key, this.song, this.imagePath}) : super(key: key);
+  const LyricsPage({
+    Key? key,
+    required this.song,
+    required this.imagePath,
+  }) : super(key: key);
 
   @override
   State<StatefulWidget> createState() => _LyricsPageState();
@@ -15,8 +19,8 @@ class LyricsPage extends StatefulWidget {
 
 class _LyricsPageState extends State<LyricsPage>
     with SingleTickerProviderStateMixin {
-  List<dynamic> lyrics;
-  TabController tabController;
+  late List<dynamic> lyrics;
+  late TabController tabController;
 
   @override
   void initState() {
@@ -73,7 +77,7 @@ class _LyricsPageState extends State<LyricsPage>
                         ),
                 );
               },
-              childCount: lyrics?.length ?? 1,
+              childCount: lyrics.length,
             ),
           ),
         ],

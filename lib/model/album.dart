@@ -5,9 +5,9 @@ class Album {
   final List<String> lyricsPaths;
 
   Album({
-    this.title,
-    this.releaseDate,
-    this.imagePath,
-    this.lyricsPaths,
+    required this.title,
+    required this.releaseDate,
+    required this.imagePath,
+    required this.lyricsPaths,
   });
 }

@@ -4,7 +4,7 @@ class Song {
   final String title;
   final Lyrics lyrics;
 
-  Song({this.title, this.lyrics});
+  Song({required this.title, required this.lyrics});
 
   factory Song.fromJson(Map<String, dynamic> json) {
     return Song(

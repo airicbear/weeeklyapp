@@ -6,11 +6,11 @@ class Member {
   final String imagePath;
 
   Member({
-    this.stageName,
-    this.firstName,
-    this.lastName,
-    this.birthday,
-    this.imagePath,
+    required this.stageName,
+    required this.firstName,
+    required this.lastName,
+    required this.birthday,
+    required this.imagePath,
   });
 
   String get fullName => '${this.firstName} ${this.lastName}';

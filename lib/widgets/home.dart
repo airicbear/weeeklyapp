@@ -27,8 +27,8 @@ class Home extends StatefulWidget {
 }
 
 class HomeState extends State<Home> with TickerProviderStateMixin {
-  TabController _tabController;
-  Widget _currentPage;
+  late TabController _tabController;
+  late Widget _currentPage;
 
   @override
   void initState() {
@@ -81,8 +81,8 @@ class _Page {
   final Widget page;
   final Icon icon;
   _Page({
-    @required this.title,
-    @required this.page,
-    @required this.icon,
+    required this.title,
+    required this.page,
+    required this.icon,
   });
 }

@@ -6,7 +6,7 @@ import 'package:weeeklyapp/widgets/grid_card.dart';
 class Lyrics extends StatelessWidget {
   final List<Album> albums;
 
-  const Lyrics({Key key, this.albums}) : super(key: key);
+  const Lyrics({Key? key, required this.albums}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

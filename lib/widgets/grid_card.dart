@@ -7,10 +7,10 @@ class GridCard extends StatelessWidget {
   final Image image;
 
   const GridCard({
-    Key key,
-    this.title,
-    this.nextPage,
-    this.image,
+    Key? key,
+    required this.title,
+    required this.nextPage,
+    required this.image,
   }) : super(key: key);
 
   @override

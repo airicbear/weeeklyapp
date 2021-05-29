@@ -24,7 +24,7 @@ class Profiles extends StatelessWidget {
                 ) {
                   return AnimatedBuilder(
                     animation: animation,
-                    builder: (BuildContext context, Widget child) {
+                    builder: (BuildContext context, Widget? child) {
                       return Opacity(
                         opacity: Interval(
                           0.0,
@@ -70,7 +70,7 @@ class Profiles extends StatelessWidget {
 class _Profile extends StatelessWidget {
   final Member member;
 
-  _Profile({@required this.member});
+  _Profile({required this.member});
 
   @override
   Widget build(BuildContext context) {
