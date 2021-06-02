@@ -42,6 +42,7 @@ flutter:
     - assets/lyrics/we_can/
     - assets/lyrics/we_play/
     - assets/lyrics/boom_chi_ki/
+    - assets/lyrics/tension_up/
 
   fonts:
     - family: Vollkorn

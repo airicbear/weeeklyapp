@@ -45,4 +45,12 @@ List<Album> albumsData = [
       'assets/lyrics/we_play/butterfly_fairytale.json',
     ],
   ),
+  Album(
+    title: 'Tension',
+    releaseDate: DateTime.utc(2021, 05, 28),
+    imagePath: 'assets/images/cover_art/tension_up.jpg',
+    lyricsPaths: [
+      'assets/lyrics/tension_up/7days_tension.json',
+    ],
+  ),
 ];
