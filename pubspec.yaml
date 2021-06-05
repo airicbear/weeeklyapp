@@ -43,6 +43,7 @@ flutter:
     - assets/lyrics/we_play/
     - assets/lyrics/boom_chi_ki/
     - assets/lyrics/tension_up/
+    - assets/lyrics/hello_me_ost/
 
   fonts:
     - family: Vollkorn

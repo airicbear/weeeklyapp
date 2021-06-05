@@ -46,6 +46,14 @@ List<Album> albumsData = [
     ],
   ),
   Album(
+    title: 'Hello, Me! OST',
+    releaseDate: DateTime.utc(2021, 02, 18),
+    imagePath: 'assets/images/cover_art/hello_me_ost.png',
+    lyricsPaths: [
+      'assets/lyrics/hello_me_ost/wake_up.json',
+    ],
+  ),
+  Album(
     title: 'Tension',
     releaseDate: DateTime.utc(2021, 05, 28),
     imagePath: 'assets/images/cover_art/tension_up.jpg',
