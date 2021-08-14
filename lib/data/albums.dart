@@ -42,6 +42,7 @@ List<Album> albumsData = [
     releaseDate: DateTime.utc(2021, 08, 04),
     imagePath: 'assets/images/cover_art/play_game_holiday.png',
     lyricsPaths: [
+      'assets/lyrics/play_game_holiday/weekend.json',
       'assets/lyrics/play_game_holiday/holiday_party.json',
     ],
   ),
