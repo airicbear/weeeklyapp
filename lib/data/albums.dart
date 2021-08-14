@@ -14,14 +14,6 @@ List<Album> albumsData = [
     ],
   ),
   Album(
-    title: 'Wanna Be RYAN OST',
-    releaseDate: DateTime.utc(2020, 09, 25),
-    imagePath: 'assets/images/cover_art/boom_chi_ki.jpeg',
-    lyricsPaths: [
-      'assets/lyrics/boom_chi_ki/boom_chi_ki.json',
-    ],
-  ),
-  Album(
     title: 'We can',
     releaseDate: DateTime.utc(2020, 10, 13),
     imagePath: 'assets/images/cover_art/we_can.png',
@@ -46,11 +38,19 @@ List<Album> albumsData = [
     ],
   ),
   Album(
-    title: 'Hello, Me! OST',
-    releaseDate: DateTime.utc(2021, 02, 18),
-    imagePath: 'assets/images/cover_art/hello_me_ost.png',
+    title: 'Play Game: Holiday',
+    releaseDate: DateTime.utc(2021, 08, 04),
+    imagePath: 'assets/images/cover_art/play_game_holiday.png',
     lyricsPaths: [
-      'assets/lyrics/hello_me_ost/wake_up.json',
+      'assets/lyrics/play_game_holiday/holiday_party.json',
+    ],
+  ),
+  Album(
+    title: 'Wanna Be RYAN OST',
+    releaseDate: DateTime.utc(2020, 09, 25),
+    imagePath: 'assets/images/cover_art/boom_chi_ki.jpeg',
+    lyricsPaths: [
+      'assets/lyrics/boom_chi_ki/boom_chi_ki.json',
     ],
   ),
   Album(
@@ -59,6 +59,14 @@ List<Album> albumsData = [
     imagePath: 'assets/images/cover_art/tension_up.jpg',
     lyricsPaths: [
       'assets/lyrics/tension_up/7days_tension.json',
+    ],
+  ),
+  Album(
+    title: 'Hello, Me! OST',
+    releaseDate: DateTime.utc(2021, 02, 18),
+    imagePath: 'assets/images/cover_art/hello_me_ost.png',
+    lyricsPaths: [
+      'assets/lyrics/hello_me_ost/wake_up.json',
     ],
   ),
 ];

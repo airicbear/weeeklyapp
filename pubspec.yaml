@@ -44,6 +44,7 @@ flutter:
     - assets/lyrics/boom_chi_ki/
     - assets/lyrics/tension_up/
     - assets/lyrics/hello_me_ost/
+    - assets/lyrics/play_game_holiday/
 
   fonts:
     - family: Vollkorn
