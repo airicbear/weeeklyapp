@@ -43,6 +43,7 @@ List<Album> albumsData = [
     imagePath: 'assets/images/cover_art/play_game_holiday.png',
     lyricsPaths: [
       'assets/lyrics/play_game_holiday/weekend.json',
+      'assets/lyrics/play_game_holiday/check_it_out.json',
       'assets/lyrics/play_game_holiday/holiday_party.json',
     ],
   ),
