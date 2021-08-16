@@ -46,6 +46,7 @@ List<Album> albumsData = [
       'assets/lyrics/play_game_holiday/check_it_out.json',
       'assets/lyrics/play_game_holiday/holiday_party.json',
       'assets/lyrics/play_game_holiday/la_luna.json',
+      'assets/lyrics/play_game_holiday/memories_of_summer_rain.json',
     ],
   ),
   Album(
